@@ -10,7 +10,6 @@ window.onload = event => {
 
 const push = event => {
     let id = event.target.id;
-    console.log(id)
     selectTab(id);
     loadContent(id);
     window.history.pushState({ id }, `${id}`, `/page/${id}`);
